@@ -12,6 +12,9 @@ apt-get update
 apt-get upgrade
 
 apt-get -y install git vim tmux wget htop gtypist bombardier
+apt-get -y install games-rogue
+#allure angband angband-data crawl crawl-commom gearhead gearhead-data hearse 
+#hyperrogue lambdahack meritous moria nethack omega-rpg slashem tasksel tasksel-data
 apt-get -y install python3-pip
 
 #apt-get install wicd-curses
