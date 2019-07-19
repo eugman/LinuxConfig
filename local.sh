@@ -4,9 +4,17 @@ then
 	exit 1
 fi
 
+cd dotfiles
 
-git config --global user.email "eugene@eugenemeidinger.com"
-git config --global user.name "Eugene Meidinger"
+if [[ ! -e ~/.gitconfig ]]
+then
+	cp .gitconfig ~/.gitconfig
+fi
+if ! grep -q tmux ~/.bashrc
+then
+	cat .bashrc >> ~/.bashrc
+fi
+cd ../
 
 python3 -m pip install -U discord.py
 
