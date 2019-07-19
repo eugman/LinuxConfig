@@ -8,18 +8,13 @@ fi
 
 cpu=$( uname -m )
 
-apt-get update
-apt-get upgrade
+apt-get -y update
+apt-get -y upgrade
 
 apt-get -y install git vim tmux wget htop ssh gtypist bombardier
-apt-get -y install games-rogue
-#allure angband angband-data crawl crawl-commom gearhead gearhead-data hearse 
-#hyperrogue lambdahack meritous moria nethack omega-rpg slashem tasksel tasksel-data
 apt-get -y install python3-pip
 
-apt-get -y install xrdp tightvncserver
-
-#apt-get install wicd-curses
+apt-get -y install xrdp realvnc-vnc-server realvnc-vnc-client
 
 
 if [[ $cpu == 'x86_64' ]]
@@ -37,8 +32,9 @@ fi
 if [[ $cpu == 'armv7l' ]] || [[ $cpu == 'armv6l' ]]
 then
 
-  apt-get install avahi-daemon
+  apt-get -y install avahi-daemon
   raspi-config
 
 fi
 
+apt-get clean
