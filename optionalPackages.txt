@@ -1,0 +1,5 @@
+#optional packages
+#apt-get install wicd-curses
+#apt-get -y install games-rogue
+#allure angband angband-data crawl crawl-commom gearhead gearhead-data hearse 
+#hyperrogue lambdahack meritous moria nethack omega-rpg slashem tasksel tasksel-data
