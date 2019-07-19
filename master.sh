@@ -33,13 +33,18 @@ if [[ $cpu == 'armv7l' ]] || [[ $cpu == 'armv6l' ]]
 then
 
   apt-get -y install avahi-daemon
+  
   #change the locale
   sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/default/keyboard
   locale-gen en_US.UTF-8
   update-locale en_US.UTF-8
   #change the keyboard layout
   sed -i 's/XKBLAYOUT="gb"/XKBLAYOUT="us"/' /etc/default/keyboard
+  timedatectl set-timezone America/New_York
+  
+  
   #raspi-config
+  
 
 fi
 
