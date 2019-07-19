@@ -34,7 +34,7 @@ then
 
 fi
 
-if [[ $cpu == 'armv7l' ]]
+if [[ $cpu == 'armv7l' ]] || [[ $cpu == 'armv6l' ]]
 then
 
   apt-get install avahi-daemon
