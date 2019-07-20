@@ -10,6 +10,11 @@ if [[ ! -e ~/.gitconfig ]]
 then
 	cp .gitconfig ~/.gitconfig
 fi
+if [[ ! -e ~/.tmux.conf ]]
+then
+	cp .tmux.conf ~/.tmux.conf
+fi
+
 if ! grep -q tmux ~/.bashrc
 then
 	cat .bashrc >> ~/.bashrc
