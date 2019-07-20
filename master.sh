@@ -42,8 +42,11 @@ then
   sed -i 's/XKBLAYOUT="gb"/XKBLAYOUT="us"/' /etc/default/keyboard
   timedatectl set-timezone America/New_York
   
-  
-  #raspi-config
+  #install wifi controls for raspberry pi 1
+  if [[ $cpu == 'armv6l' ]]
+  then
+	  apt-get -y install raspi-config
+  fi
   
 
 fi
