@@ -45,7 +45,7 @@ then
   #install wifi controls for raspberry pi 1
   if [[ $cpu == 'armv6l' ]]
   then
-	  apt-get -y install raspi-config
+    cp wpa_supplicant.conf /etc/wpa_supplicant.conf/wpa_supplicant.conf
   fi
   
 
