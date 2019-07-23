@@ -28,5 +28,5 @@ cd ../
 git clone https://github.com/eugman/TysonBot.git
 touch ./TysonBot/apikey.txt
 
-git clone https://github.com/eugman/RoguelikeTest.git
+git clone https://github.com/eugman/MMOLike.git
 git clone https://github.com/eugman/mud-pi.git
