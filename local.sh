@@ -30,3 +30,5 @@ touch ./TysonBot/apikey.txt
 
 git clone https://github.com/eugman/MMOLike.git
 git clone https://github.com/eugman/mud-pi.git
+
+vim-addons install python-jedi
