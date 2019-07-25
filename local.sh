@@ -23,6 +23,7 @@ cd ../
 
 python3 -m pip install -U discord.py
 python3 -m pip install -U flask
+python3 -m pip install -U flask-SQLAlchemy
 
 cd ../
 
