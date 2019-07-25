@@ -22,6 +22,7 @@ fi
 cd ../
 
 python3 -m pip install -U discord.py
+python3 -m pip install -U flask
 
 cd ../
 
@@ -30,5 +31,7 @@ touch ./TysonBot/apikey.txt
 
 git clone https://github.com/eugman/MMOLike.git
 git clone https://github.com/eugman/mud-pi.git
+git clone https://github.com/eugman/EugeneQuest.git
+
 
 vim-addons install python-jedi
