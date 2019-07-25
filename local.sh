@@ -15,6 +15,11 @@ then
 	cp .tmux.conf ~/.tmux.conf
 fi
 
+if [[ ! -e ~/.vimrc ]]
+then
+	cp .vimrc ~/.vimrc
+fi
+
 if ! grep -q tmux ~/.bashrc
 then
 	cat .bashrc >> ~/.bashrc
