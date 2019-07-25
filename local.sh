@@ -15,6 +15,11 @@ then
 	cp .tmux.conf ~/.tmux.conf
 fi
 
+if [[ ! -e ~/.vimrc ]]
+then
+	cp .vimrc ~/.vimrc
+fi
+
 if ! grep -q tmux ~/.bashrc
 then
 	cat .bashrc >> ~/.bashrc
@@ -39,5 +44,5 @@ vim-addons install python-jedi
 
 ssh-keygen
 touch ~/.ssh/authorized-keys
-cat ~/LinuxConfigpublickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
-cat ~/LinuxConfigpublickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
+cat ~/LinuxConfig/publickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
+cat ~/LinuxConfig/publickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
