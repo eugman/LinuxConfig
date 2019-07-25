@@ -39,5 +39,5 @@ vim-addons install python-jedi
 
 ssh-keygen
 touch ~/.ssh/authorized-keys
-cat ~/LinuxConfigpublickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
-cat ~/LinuxConfigpublickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
+cat ~/LinuxConfig/publickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
+cat ~/LinuxConfig/publickeys/gamingpc.pub >> ~/.ssh/authorizedkeys

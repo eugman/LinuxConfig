@@ -19,7 +19,7 @@ apt-get -y install python3-pip
 apt-get -y install xrdp realvnc-vnc-server realvnc-vnc-client
 
 
-if [[ $cpu == 'x86_64' ]] && [[ $desktop
+if [[ $cpu == 'x86_64' ]]
 then
 
   snap install slack --classic
