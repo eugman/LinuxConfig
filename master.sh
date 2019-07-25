@@ -7,6 +7,7 @@ then
 fi
 
 cpu=$( uname -m )
+desktop=$( dpkg -l ubuntu-desktop )
 
 apt-get -y update
 apt-get -y upgrade
@@ -18,9 +19,8 @@ apt-get -y install python3-pip
 apt-get -y install xrdp realvnc-vnc-server realvnc-vnc-client
 
 
-if [[ $cpu == 'x86_64' ]]
+if [[ $cpu == 'x86_64' ]] && [[ $desktop
 then
-  apt-get -y install steam
 
   snap install slack --classic
   snap install discord
