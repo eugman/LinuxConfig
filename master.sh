@@ -11,7 +11,7 @@ cpu=$( uname -m )
 apt-get -y update
 apt-get -y upgrade
 
-apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi
+apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi sqlite3
 apt-get -y install bombardier gtypist nsnake moon-buggy greed
 apt-get -y install python3-pip
 
