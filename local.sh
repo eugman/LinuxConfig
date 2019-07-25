@@ -35,3 +35,8 @@ git clone https://github.com/eugman/EugeneQuest.git
 
 
 vim-addons install python-jedi
+
+ssh-keygen
+touch ~/.ssh/authorized-keys
+cat ~/LinuxConfigpublickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
+cat ~/LinuxConfigpublickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
