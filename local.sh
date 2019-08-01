@@ -29,6 +29,7 @@ cd ../
 python3 -m pip install -U discord.py
 python3 -m pip install -U flask
 python3 -m pip install -U flask-SQLAlchemy
+python3 -m pip install -U trello
 #python3 -m pip install -U flask-wtf
 
 cd ../
