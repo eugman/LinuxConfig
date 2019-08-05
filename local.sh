@@ -30,7 +30,7 @@ python3 -m pip install -U discord.py
 python3 -m pip install -U flask
 python3 -m pip install -U flask-SQLAlchemy
 python3 -m pip install -U trello
-#python3 -m pip install -U flask-wtf
+python3 -m pip install -U requests
 
 cd ../
 
@@ -46,7 +46,16 @@ git clone https://github.com/oysttyer/oysttyer.git
 
 vim-addons install python-jedi
 
-ssh-keygen
-touch ~/.ssh/authorized-keys
-cat ~/LinuxConfig/publickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
-cat ~/LinuxConfig/publickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
+curl -sSL https://get.docker.com | sh
+
+if [[ ! -e "~/.ssh" ]]
+then
+
+	ssh-keygen
+	touch ~/.ssh/authorized-keys
+	cat ~/LinuxConfig/publickeys/worklaptop.pub >> ~/.ssh/authorizedkeys
+	cat ~/LinuxConfig/publickeys/gamingpc.pub >> ~/.ssh/authorizedkeys
+
+fi
+git clone https://github.com/pallets/jinja.git
+cp jinja/ext/Vim/jinja.vim /home/pi/.vim/plugin/
