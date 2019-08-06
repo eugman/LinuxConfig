@@ -7,19 +7,22 @@ then
 fi
 
 cpu=$( uname -m )
+desktop=$( dpkg -l ubuntu-desktop )
 
 apt-get -y update
 apt-get -y upgrade
 
-apt-get -y install git vim tmux wget htop ssh gtypist bombardier telnet
-apt-get -y install python3-pip
+apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi sqlite3
+apt-get -y install bombardier gtypist nsnake moon-buggy greed
+apt-get -y install python3-pip python3-dev python3-setuptools
+
+pip3 install thefuck
 
 apt-get -y install xrdp realvnc-vnc-server realvnc-vnc-client
 
 
 if [[ $cpu == 'x86_64' ]]
 then
-  apt-get -y install steam
 
   snap install slack --classic
   snap install discord
@@ -41,6 +44,7 @@ then
   #change the keyboard layout
   sed -i 's/XKBLAYOUT="gb"/XKBLAYOUT="us"/' /etc/default/keyboard
   timedatectl set-timezone America/New_York
+  sed -i 's/ClockFmt=%R/ClockFmt=%r/' /home/pi/.config/lxpanel/LXDE-pi/panels/panel
   
   #install wifi controls for raspberry pi 1
   if [[ $cpu == 'armv6l' ]]
