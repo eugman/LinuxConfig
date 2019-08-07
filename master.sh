@@ -12,9 +12,9 @@ desktop=$( dpkg -l ubuntu-desktop )
 apt-get -y update
 apt-get -y upgrade
 
-apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi sqlite3
+apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi sqlite3 sqlitebrowser
 apt-get -y install bombardier gtypist nsnake moon-buggy greed
-apt-get -y install python3-pip python3-dev python3-setuptools
+apt-get -y install python3-pip python3-dev python3-setuptools idle3
 
 pip3 install thefuck
 
