@@ -35,7 +35,7 @@ fi
 if [[ $cpu == 'armv7l' ]] || [[ $cpu == 'armv6l' ]]
 then
 
-  apt-get -y install avahi-daemon
+  apt-get -y install avahi-daemon python-rpi.gpio python3-rpi.gpio
   
   #change the locale
   sed -i 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/default/keyboard
