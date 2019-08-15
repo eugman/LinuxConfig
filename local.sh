@@ -40,13 +40,14 @@ touch ./TysonBot/apikey.txt
 git clone https://github.com/eugman/MMOLike.git
 git clone https://github.com/eugman/mud-pi.git
 git clone https://github.com/eugman/EugeneQuest.git
+git clone https://github.com/eugman/CLIMenu
 
 git clone https://github.com/oysttyer/oysttyer.git
 #https://neiloosten.com/2016/02/install-oysttyer-command-line-twitter/
 
 vim-addons install python-jedi
 
-curl -sSL https://get.docker.com | sh
+#curl -sSL https://get.docker.com | sh
 
 if [[ ! -e "~/.ssh" ]]
 then
