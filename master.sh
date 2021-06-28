@@ -13,29 +13,13 @@ apt-get -y update
 apt-get -y upgrade
 
 #CLI utilities
-apt-get -y install git vim tmux wget htop ssh telnet vim-python-jedi sqlite3 dialog
-#CLI games
-apt-get -y install bombardier gtypist nsnake moon-buggy greed
+apt-get -y install vim tmux wget htop sshsqlite3
 #Python
 apt-get -y install python3-pip python3-dev python3-setuptools
 #GUI tools
 apt-get -y install idle3 sqlitebrowser
 
-pip3 install thefuck
-
 apt-get -y install xrdp realvnc-vnc-server realvnc-vnc-client
-
-
-if [[ $cpu == 'x86_64' ]]
-then
-
-  snap install slack --classic
-  snap install discord
-
-  wget -nc https://azuredatastudiobuilds.blob.core.windows.net/releases/1.9.0/azuredatastudio-linux-1.9.0.deb
-  dpkg -i ./azuredatastudio-linux-1.9.0.deb
-
-fi
 
 if [[ $cpu == 'armv7l' ]] || [[ $cpu == 'armv6l' ]]
 then
